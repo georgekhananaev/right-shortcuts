@@ -3,7 +3,7 @@
 Right Shortcuts puts the actions you use most into Finder's right-click menu and leaves out the rest. You choose every item, where it appears (files, folders, empty window space, or a toolbar button) and whether the menu works everywhere on your Mac or only in folders you pick.
 
 <p align="center">
-  <img src="docs/screenshots/finder-menu.png" width="520" alt="Finder's right-click menu on a PDF, with the Right Shortcuts submenu open: Open in Terminal, Open in Xcode, Copy Path, Copy Name, Copy Path As, Copy To, Move To, Hide, AirDrop and Delete Permanently">
+  <img src="docs/screenshots/demo.gif" width="560" alt="Animation: right-clicking the Design folder in Finder, choosing Right Shortcuts, then New File, then Text Document, naming the file Launch plan.txt, and the file appearing inside the folder">
 </p>
 
 ## Features
@@ -22,6 +22,12 @@ Right Shortcuts puts the actions you use most into Finder's right-click menu and
 - Native macOS look with light and dark mode, plus Liquid Glass on macOS 26.
 
 ## Screenshots
+
+Your actions on any file or folder, one submenu away:
+
+<p align="center">
+  <img src="docs/screenshots/finder-menu.png" width="520" alt="Finder's right-click menu on a PDF, with the Right Shortcuts submenu open: Open in Terminal, Open in Xcode, Copy Path, Copy Name, Copy Path As, Copy To, Move To, Hide, AirDrop and Delete Permanently">
+</p>
 
 Choose what is in the menu, and see the result in a live preview:
 
