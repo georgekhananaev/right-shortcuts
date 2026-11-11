@@ -23,6 +23,17 @@ Right Shortcuts puts the actions you use most into Finder's right-click menu and
 
 ## Screenshots
 
+<p align="center">
+  <img src="docs/app-store/1-finder-menu.png" width="49%" alt="Your own actions in Finder's right-click menu: the Right Shortcuts submenu open on a file">
+  <img src="docs/app-store/2-menu-items.png" width="49%" alt="Choose every item in your menu: the Menu Items pane with its live preview">
+  <img src="docs/app-store/3-new-file.png" width="49%" alt="New files, right where you are: the New File submenu in Finder">
+  <img src="docs/app-store/4-folders.png" width="49%" alt="Everywhere on your Mac, or only where you choose: the Folders pane">
+  <img src="docs/app-store/5-light-dark.png" width="49%" alt="At home in Light and Dark Mode: the Menu Items pane in both appearances">
+</p>
+
+<details>
+<summary>The windows up close</summary>
+
 Your actions on any file or folder, one submenu away:
 
 <p align="center">
@@ -49,6 +60,8 @@ Decide where the menu appears and where the app may work:
   <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/folders.png">
   <img src="docs/screenshots/folders-light.png" alt="The Folders pane: allowed folders, a choice between everywhere on this Mac and chosen folders only, exceptions and quick folders">
 </picture>
+
+</details>
 
 ## Requirements
 
