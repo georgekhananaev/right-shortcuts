@@ -2,6 +2,10 @@
 
 Right Shortcuts puts the actions you use most into Finder's right-click menu and leaves out the rest. You choose every item, where it appears (files, folders, empty window space, or a toolbar button) and whether the menu works everywhere on your Mac or only in folders you pick.
 
+<p align="center">
+  <img src="docs/screenshots/finder-menu.png" width="520" alt="Finder's right-click menu on a PDF, with the Right Shortcuts submenu open: Open in Terminal, Open in Xcode, Copy Path, Copy Name, Copy Path As, Copy To, Move To, Hide, AirDrop and Delete Permanently">
+</p>
+
 ## Features
 
 - **New File** from templates: text, Markdown, rich text, Word, Excel, PowerPoint, JSON, shell script, Python, HTML, CSS, JavaScript, TypeScript, Swift, YAML, XML, CSV, or any file you add. It asks for a name first (with the name selected, like Finder's rename) and can open the file afterwards. You can edit what text templates start with.
@@ -16,6 +20,20 @@ Right Shortcuts puts the actions you use most into Finder's right-click menu and
 - **Starts at login** if you switch it on, lives in the menu bar (optional), with Pause/Resume.
 - **Sandboxed**, so it is ready for the Mac App Store. It works on your files only in folders you allowed.
 - Native macOS look with light and dark mode, plus Liquid Glass on macOS 26.
+
+## Screenshots
+
+Choose what is in the menu, and see the result in a live preview:
+
+![The Menu Items pane: a list of actions with switches, and a preview of the Finder menu beside it](docs/screenshots/menu-items.png)
+
+Pick the kinds of files you can create:
+
+![The New File pane: templates for text, Markdown, Word, Excel, PowerPoint, JSON, shell scripts and more, each with a switch](docs/screenshots/new-file.png)
+
+Decide where the menu appears and where the app may work:
+
+![The Folders pane: allowed folders, a choice between everywhere on this Mac and chosen folders only, exceptions and quick folders](docs/screenshots/folders.png)
 
 ## Requirements
 
