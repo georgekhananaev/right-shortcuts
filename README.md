@@ -31,15 +31,24 @@ Your actions on any file or folder, one submenu away:
 
 Choose what is in the menu, and see the result in a live preview:
 
-![The Menu Items pane: a list of actions with switches, and a preview of the Finder menu beside it](docs/screenshots/menu-items.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/menu-items.png">
+  <img src="docs/screenshots/menu-items-light.png" alt="The Menu Items pane: a list of actions with switches, and a preview of the Finder menu beside it">
+</picture>
 
 Pick the kinds of files you can create:
 
-![The New File pane: templates for text, Markdown, Word, Excel, PowerPoint, JSON, shell scripts and more, each with a switch](docs/screenshots/new-file.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/new-file.png">
+  <img src="docs/screenshots/new-file-light.png" alt="The New File pane: templates for text, Markdown, Word, Excel, PowerPoint, JSON, shell scripts and more, each with a switch">
+</picture>
 
 Decide where the menu appears and where the app may work:
 
-![The Folders pane: allowed folders, a choice between everywhere on this Mac and chosen folders only, exceptions and quick folders](docs/screenshots/folders.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/folders.png">
+  <img src="docs/screenshots/folders-light.png" alt="The Folders pane: allowed folders, a choice between everywhere on this Mac and chosen folders only, exceptions and quick folders">
+</picture>
 
 ## Requirements
 
