@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- The app is sandboxed. It works on the user's files only in folders they allowed. -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<!-- Settings and menu clicks shared with the Finder extension. -->
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>$(APP_GROUP_ID)</string>
+	</array>
+	<!-- Remembers the folders the user allowed, so it doesn't ask again after a restart. -->
+	<key>com.apple.security.files.bookmarks.app-scope</key>
+	<true/>
+	<!-- New File makes scripts that can run, and Copy To must leave copied apps and scripts runnable. -->
+	<key>com.apple.security.files.user-selected.executable</key>
+	<true/>
+	<!-- Create, copy, move, hide and delete in the folders the user allowed. -->
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+</dict>
+</plist>

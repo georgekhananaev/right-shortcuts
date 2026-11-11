@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* RightShortcutsCore in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000002 /* RightShortcutsCore */; };
+		A10000000000000000000003 /* RightShortcutsActions in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000004 /* RightShortcutsActions */; };
+		A10000000000000000000005 /* RightShortcutsCore in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000006 /* RightShortcutsCore */; };
+		A10000000000000000000007 /* RightShortcutsFinderExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* RightShortcutsFinderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A10000000000000000000009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1000000000000000000000A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1000000000000000000000B;
+			remoteInfo = "Right Shortcuts Finder Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1000000000000000000000C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10000000000000000000007 /* RightShortcutsFinderExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1000000000000000000000D /* Right Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Right Shortcuts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000008 /* RightShortcutsFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RightShortcutsFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000000000000000000000E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "App Info.plist"; path = Resources/App/Info.plist; sourceTree = "<group>"; };
+		A1000000000000000000000F /* RightShortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "App.entitlements"; path = Resources/App/RightShortcuts.entitlements; sourceTree = "<group>"; };
+		A10000000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Finder Extension Info.plist"; path = Resources/FinderExtension/Info.plist; sourceTree = "<group>"; };
+		A10000000000000000000011 /* FinderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Finder Extension.entitlements"; path = Resources/FinderExtension/FinderExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A10000000000000000000012 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = App;
+			path = Sources/App;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000013 /* Finder Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = "Finder Extension";
+			path = Sources/FinderExtension;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000014 /* App Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = "App Resources";
+			path = Resources/App/Bundle;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000015 /* Finder Extension Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = "Finder Extension Resources";
+			path = Resources/FinderExtension/Bundle;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10000000000000000000016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* RightShortcutsCore in Frameworks */,
+				A10000000000000000000003 /* RightShortcutsActions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000005 /* RightShortcutsCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000018 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000012 /* App */,
+				A10000000000000000000013 /* Finder Extension */,
+				A10000000000000000000014 /* App Resources */,
+				A10000000000000000000015 /* Finder Extension Resources */,
+				A10000000000000000000019 /* Settings Files */,
+				A1000000000000000000001A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000019 /* Settings Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000E /* App Info.plist */,
+				A1000000000000000000000F /* App.entitlements */,
+				A10000000000000000000010 /* Finder Extension Info.plist */,
+				A10000000000000000000011 /* Finder Extension.entitlements */,
+			);
+			name = "Settings Files";
+			sourceTree = "<group>";
+		};
+		A1000000000000000000001A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000D /* Right Shortcuts.app */,
+				A10000000000000000000008 /* RightShortcutsFinderExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000000000000000000001B /* Right Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000001C /* Build configuration list for PBXNativeTarget "Right Shortcuts" */;
+			buildPhases = (
+				A1000000000000000000001D /* Sources */,
+				A10000000000000000000016 /* Frameworks */,
+				A1000000000000000000001E /* Resources */,
+				A1000000000000000000001F /* Pack Office Templates */,
+				A1000000000000000000000C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A10000000000000000000020 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A10000000000000000000012 /* App */,
+				A10000000000000000000014 /* App Resources */,
+			);
+			name = "Right Shortcuts";
+			packageProductDependencies = (
+				A10000000000000000000002 /* RightShortcutsCore */,
+				A10000000000000000000004 /* RightShortcutsActions */,
+			);
+			productName = "Right Shortcuts";
+			productReference = A1000000000000000000000D /* Right Shortcuts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1000000000000000000000B /* Right Shortcuts Finder Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000021 /* Build configuration list for PBXNativeTarget "Right Shortcuts Finder Extension" */;
+			buildPhases = (
+				A10000000000000000000022 /* Sources */,
+				A10000000000000000000017 /* Frameworks */,
+				A10000000000000000000023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A10000000000000000000013 /* Finder Extension */,
+				A10000000000000000000015 /* Finder Extension Resources */,
+			);
+			name = "Right Shortcuts Finder Extension";
+			packageProductDependencies = (
+				A10000000000000000000006 /* RightShortcutsCore */,
+			);
+			productName = "Right Shortcuts Finder Extension";
+			productReference = A10000000000000000000008 /* RightShortcutsFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000000000000000000000A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					A1000000000000000000001B = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					A1000000000000000000000B = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = A10000000000000000000024 /* Build configuration list for PBXProject "RightShortcuts" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000000000000000000018;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A10000000000000000000025 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A1000000000000000000001A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000000000000000000001B /* Right Shortcuts */,
+				A1000000000000000000000B /* Right Shortcuts Finder Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000000000000000000001E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1000000000000000000001F /* Pack Office Templates */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Pack Office Templates";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Zips the Word, Excel and PowerPoint template sources into real documents.\n\"$SRCROOT/scripts/pack-templates.sh\" \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/Templates\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000000000000000000001D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10000000000000000000020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1000000000000000000000B /* Right Shortcuts Finder Extension */;
+			targetProxy = A10000000000000000000009 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_GROUP_ID = "$(DEVELOPMENT_TEAM).com.georgekhananaev.RightShortcuts";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = F58P5D34H9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_GROUP_ID = "$(DEVELOPMENT_TEAM).com.georgekhananaev.RightShortcuts";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = F58P5D34H9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A10000000000000000000028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/App/RightShortcuts.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_NAME = RightShortcuts;
+				INFOPLIST_FILE = Resources/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgekhananaev.RightShortcuts;
+				PRODUCT_MODULE_NAME = RightShortcutsApp;
+				PRODUCT_NAME = "Right Shortcuts";
+			};
+			name = Debug;
+		};
+		A10000000000000000000029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/App/RightShortcuts.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_NAME = RightShortcuts;
+				INFOPLIST_FILE = Resources/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgekhananaev.RightShortcuts;
+				PRODUCT_MODULE_NAME = RightShortcutsApp;
+				PRODUCT_NAME = "Right Shortcuts";
+			};
+			name = Release;
+		};
+		A1000000000000000000002A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/FinderExtension/FinderExtension.entitlements;
+				INFOPLIST_FILE = Resources/FinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgekhananaev.RightShortcuts.FinderExtension;
+				PRODUCT_MODULE_NAME = RightShortcutsFinderExtensionApp;
+				PRODUCT_NAME = RightShortcutsFinderExtension;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1000000000000000000002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/FinderExtension/FinderExtension.entitlements;
+				INFOPLIST_FILE = Resources/FinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgekhananaev.RightShortcuts.FinderExtension;
+				PRODUCT_MODULE_NAME = RightShortcutsFinderExtensionApp;
+				PRODUCT_NAME = RightShortcutsFinderExtension;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000024 /* Build configuration list for PBXProject "RightShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000026 /* Debug */,
+				A10000000000000000000027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000001C /* Build configuration list for PBXNativeTarget "Right Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000028 /* Debug */,
+				A10000000000000000000029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000021 /* Build configuration list for PBXNativeTarget "Right Shortcuts Finder Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000002A /* Debug */,
+				A1000000000000000000002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A10000000000000000000025 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A10000000000000000000002 /* RightShortcutsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000025 /* XCLocalSwiftPackageReference "." */;
+			productName = RightShortcutsCore;
+		};
+		A10000000000000000000004 /* RightShortcutsActions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000025 /* XCLocalSwiftPackageReference "." */;
+			productName = RightShortcutsActions;
+		};
+		A10000000000000000000006 /* RightShortcutsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000025 /* XCLocalSwiftPackageReference "." */;
+			productName = RightShortcutsCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A1000000000000000000000A /* Project object */;
+}

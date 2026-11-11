@@ -35,6 +35,10 @@ It happens only because you asked for it:
 
 If you get the app from the Mac App Store, Apple handles the download, and any payment, under [Apple's privacy policy](https://www.apple.com/legal/privacy/). If you chose to share analytics with app developers in System Settings ▸ Privacy & Security ▸ Analytics & Improvements, Apple may show the developer usage statistics and crash reports for the app. Apple provides them without identifying you.
 
+## GitHub
+
+If you download the app from this repository's releases page, GitHub handles the download under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). The downloaded app contains the same code and never checks for updates by itself.
+
 ## Removing your data
 
 Deleting the app leaves your settings behind. [Support](SUPPORT.md#remove-the-app-and-its-data) lists the folders to delete if you want everything gone.

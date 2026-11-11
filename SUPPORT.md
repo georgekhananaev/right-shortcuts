@@ -41,6 +41,10 @@ Open **Menu Items**. Turn items on or off, drag to reorder, and choose **Edit…
 
 Open **General** and turn off **Open at login**.
 
+### How do I update the app?
+
+A copy from the Mac App Store is updated by the App Store. A copy downloaded from GitHub doesn't update itself: download the newer disk image from the [releases page](https://github.com/georgekhananaev/right-shortcuts/releases/latest) and replace the app in Applications. Your settings are kept.
+
 ## Remove the app and its data
 
 Quit Right Shortcuts and move it from Applications to the Trash. Your settings stay behind. To remove them too, open Finder, choose **Go ▸ Go to Folder…**, type `~/Library` and delete these:

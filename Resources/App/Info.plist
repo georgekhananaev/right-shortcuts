@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Right Shortcuts</string>
+	<key>CFBundleExecutable</key>
+	<string>RightShortcuts</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.georgekhananaev.RightShortcuts</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Right Shortcuts</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.georgekhananaev.RightShortcuts.bridge</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>rightshortcuts</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>One of your custom commands wants to control another app.</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>One of your custom commands wants to use files in your Desktop folder.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>One of your custom commands wants to use files in your Documents folder.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>One of your custom commands wants to use files in your Downloads folder.</string>
+	<key>NSNetworkVolumesUsageDescription</key>
+	<string>One of your custom commands wants to use files on a network drive.</string>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>One of your custom commands wants to use files on an external drive.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2026 George Khananaev</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>

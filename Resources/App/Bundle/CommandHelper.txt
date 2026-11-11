@@ -1,0 +1,10 @@
+-- Right Shortcuts runs your custom commands through this script.
+-- macOS only runs scripts for an app from this folder, and only you can put them here.
+
+on run_shell(commandLine)
+	try
+		return {0, do shell script commandLine without altering line endings}
+	on error message number status
+		return {status, message}
+	end try
+end run_shell

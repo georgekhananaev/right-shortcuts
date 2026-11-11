@@ -6,6 +6,14 @@ Right Shortcuts puts the actions you use most into Finder's right-click menu and
   <img src="docs/screenshots/demo.gif" width="560" alt="Animation: right-clicking the Design folder in Finder, choosing Right Shortcuts, then New File, then Text Document, naming the file Launch plan.txt, and the file appearing inside the folder">
 </p>
 
+## Install
+
+Download `Right-Shortcuts-<version>.dmg` from the [latest release](https://github.com/georgekhananaev/right-shortcuts/releases/latest), open it and drag Right Shortcuts into Applications. The app is signed with a Developer ID and notarized by Apple.
+
+The download doesn't update itself, because the app has no network code. To hear about new versions, choose **Watch ▸ Custom ▸ Releases** at the top of this page.
+
+You can also [build it yourself](#build-and-install).
+
 ## Features
 
 - **New File** from templates: text, Markdown, rich text, Word, Excel, PowerPoint, JSON, shell script, Python, HTML, CSS, JavaScript, TypeScript, Swift, YAML, XML, CSV, or any file you add. It asks for a name first (with the name selected, like Finder's rename) and can open the file afterwards. You can edit what text templates start with.
@@ -67,7 +75,7 @@ Decide where the menu appears and where the app may work:
 
 - macOS 14 Sonoma or later.
 - To build and run it yourself: Xcode **or** just the Command Line Tools (`xcode-select --install`), and a code signing identity. A free Apple Development certificate is enough; the build script finds it automatically.
-- To publish on the Mac App Store: Xcode and a paid Apple Developer Program membership. See [Publishing on the Mac App Store](#publishing-on-the-mac-app-store).
+- To publish on the Mac App Store or as a notarized download: Xcode and a paid Apple Developer Program membership. See [Publishing on the Mac App Store](#publishing-on-the-mac-app-store) and [Publishing a download on GitHub](#publishing-a-download-on-github).
 
 ## Build and install
 
@@ -81,6 +89,7 @@ Other tasks:
 make build      # build/Right Shortcuts.app only
 make test       # unit tests (Swift Testing)
 make icon       # redraw the app icon after editing scripts/generate-icon.swift
+make dmg        # a notarized disk image from an Xcode archive, see "Publishing a download on GitHub"
 make uninstall  # remove the app; ./scripts/uninstall.sh --purge also deletes settings
 make clean
 ```
@@ -157,7 +166,7 @@ Sources/FinderExtension  the Finder Sync extension
 Sources/App              menu bar app: settings window, onboarding, permissions, prompts
 Resources                Info.plists, entitlements, bundled files, Office template sources
 Tests                    unit tests for Core and Actions
-scripts                  build, install, uninstall, test, template packer, icon generator
+scripts                  build, install, uninstall, test, template packer, icon generator, disk image
 RightShortcuts.xcodeproj the same sources as an Xcode project, for archiving and the App Store
 ```
 
@@ -183,6 +192,18 @@ Notes for App Review, worth pasting into the review notes field:
 - Custom commands are shell scripts the user writes. They run with `NSUserAppleScriptTask` from the Application Scripts folder. The helper script is installed only after the user confirms in an open panel showing that folder.
 - Open at login is off until the user switches it on.
 
+## Publishing a download on GitHub
+
+The download is the same archive as the App Store build, signed with a Developer ID instead. You need the paid Apple Developer Program and Xcode, signed in to your account.
+
+```sh
+make dmg ARCHIVE="$HOME/Library/Developer/Xcode/Archives/<date>/Right Shortcuts <version>.xcarchive"
+```
+
+Xcode signs the app with your account's cloud-managed Developer ID certificate and sends it to Apple's notary service, so no certificate or password has to be on your Mac. When Apple has finished, the script writes `build/Right-Shortcuts-<version>.dmg` and prints its SHA-256. Attach the file to a GitHub release tagged `v<version>`.
+
+If `xcode-select` points at the Command Line Tools, set `DEVELOPER_DIR` to Xcode's `Contents/Developer` folder first.
+
 ## Continuous integration
 
 `.github/workflows/tests.yml` runs the unit tests on every push and pull request.
@@ -202,6 +223,16 @@ Notes for App Review, worth pasting into the review notes field:
 - [Support](SUPPORT.md): setup, common questions and how to report a problem.
 
 The app's About pane and the App Store listing link to these two pages, so the files must keep their names and stay on the `main` branch.
+
+## Contributing
+
+Bug reports and pull requests are welcome. By sending a pull request you agree that your contribution is under the same license as the project, and that the author may also distribute it in the Mac App Store edition of Right Shortcuts.
+
+## License
+
+Copyright © 2026 George Khananaev.
+
+Right Shortcuts is free software: you can redistribute it and modify it under the terms of the [GNU General Public License, version 3](LICENSE). It comes with no warranty.
 
 ## Author
 

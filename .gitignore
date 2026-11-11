@@ -1,0 +1,9 @@
+.build/
+build/
+.swiftpm/
+.DS_Store
+.idea/
+# Xcode's per-user state. The project itself is kept.
+xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
